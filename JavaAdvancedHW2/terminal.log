@@ -1,0 +1,36 @@
+drboat@MacBook-Pro-Elliot:~/Java/JavaAdvancedHW2/src$ javac ru/ifmo/rain/vozleev/ArraySet.java 
+drboat@MacBook-Pro-Elliot:~/Java/JavaAdvancedHW2/src$ java -cp . -p . -m info.kgeorgiy.java.advanced.arrayset SortedSet ru.ifmo.rain.vozleev.ArraySet
+=== Running test01_constructors
+=== Running test02_empty
+=== Running test03_naturalOrder
+=== Running test04_externalOrder
+=== Running test05_constructorPerformance
+    constructor done in 84ms
+=== Running test07_contains
+=== Running test08_containsPerformance
+    contains done in 82ms
+=== Running test09_containsAll
+=== Running test11_comparator
+=== Running test12_headSet
+=== Running test13_tailSet
+=== Running test14_subSet
+=== Running test16_first
+=== Running test17_last
+============================
+OK SortedSetTest for ru.ifmo.rain.vozleev.ArraySet in 2453ms 
+Class: SortedSetTest
+Salt: 
+Certificate: 1w3e/sm+cNThielur29z6wZFxOM=
++-----------+
+|@:.        |
+|/o         |
+|:-.        |
+|XX         |
+|..:.       |
+| ..:       |
+| ...o.     |
+| : .:      |
+| .:        |
+| o         |
+|  .        |
++-----------+
