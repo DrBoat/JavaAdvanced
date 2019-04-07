@@ -1,0 +1,1 @@
+jar cfe Implementor.jar ru.ifmo.rain.komarov.Implementor ru/ifmo/rain/komarov/*.class info/kgeorgiy/java/advanced/implementor/*.class
