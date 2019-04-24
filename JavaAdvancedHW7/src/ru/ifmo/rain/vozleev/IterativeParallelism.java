@@ -82,7 +82,7 @@ public class IterativeParallelism implements ScalarIP {
         init(threads, values);
         var threadValues = new ArrayList<R>(Collections.nCopies(threadsNumber, null));
         addThreads(threadValues, values, mapper);
-        joinThreads(this.threads);
+        joinThreads();
         return resultGrabber.apply(threadValues.stream());
     }
 
@@ -122,9 +122,9 @@ public class IterativeParallelism implements ScalarIP {
         threads.add(thread);
     }
 
-    private void joinThreads(final List<Thread> threads)
+    private void joinThreads()
             throws InterruptedException {
-        for (var thread : threads) {
+        for (var thread : this.threads) {
             thread.join();
         }
     }
