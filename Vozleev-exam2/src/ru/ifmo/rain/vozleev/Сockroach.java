@@ -1,16 +1,11 @@
 package ru.ifmo.rain.vozleev;
 
-import java.util.ArrayList;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.List;
 
-public class Сockroach {
-
-    public void sortArray(ArrayList<Integer> arrayForSort)
-    {
-
+public class Cockroach {
+    public void run(List<Integer> list) {
+        Arrays.sort(list.toArray());
     }
-
-    //принял массив
-    //отсортил
-    //отчитался, что отсортил
 }
