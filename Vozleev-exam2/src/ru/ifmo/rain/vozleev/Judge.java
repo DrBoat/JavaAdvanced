@@ -40,7 +40,7 @@ public class Judge {
         List<Cockroach> cockroaches = new ArrayList<>(Collections.nCopies(count, new Cockroach()));
         List<Integer> scores = new ArrayList<>(Collections.nCopies(SIZE, 0));
         for(int t = 0; t < tries; t++) {
-            System.out.println("Round: " + t);
+            System.out.println("Round: " + (t + 1));
             System.out.println("---------------------------------------");
             final List<Thread> threads = new ArrayList<>();
             final List<Integer> integers = generate(SIZE);
@@ -67,9 +67,10 @@ public class Judge {
                 return;
             }
             for(int i = 0; i < count; i++) {
-                scores.set(i, scores.get(i) + count - i);
-                System.out.println("Place is " + (i + 1));
-                System.out.println("Score is " + scores.get(i));
+                int number = positions.get(i);
+                scores.set(number, scores.get(number) + count - i);
+                System.out.println("Place is " + (i + 1) + ". Number of cockroach is " + (number + 1));
+                System.out.println("Score is " + scores.get(number));
                 System.out.println();
             }
             System.out.println("---------------------------------------");
