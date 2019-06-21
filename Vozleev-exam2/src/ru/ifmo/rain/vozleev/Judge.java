@@ -49,7 +49,9 @@ public class Judge {
                 int finalI = i;
                 threads.add(new Thread(() -> {
                     cockroaches.get(finalI).run(integers);
-                    positions.add(finalI);
+                    synchronized (positions) {
+                        positions.add(finalI);
+                    }
                 }));
             }
             for(int i = 0; i < count; i++) {
